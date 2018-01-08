@@ -8,4 +8,5 @@ def prime?(num)
       (num.abs % x == 0) ? v=false : v=true
     end
   end
+  return v
 end
