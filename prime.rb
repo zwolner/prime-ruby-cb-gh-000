@@ -1,5 +1,5 @@
 # Add  code here!
 def prime?(num)
-  range = Array.new(2...num.to_i.abs)
+  range = Array.new(num.abs-1){ |x| (x+1)-(num.abs-1)}
   range.for {|x| num % x == 0 ? false : true}
 end
