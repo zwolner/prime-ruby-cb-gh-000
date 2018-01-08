@@ -1,6 +1,5 @@
 # Add  code here!
 require 'benchmark'
-puts Benchmark.measure { prime?(5)*1_000_000 }
 
 def prime?(num)
   if num == 0 || num.even? == true || num != num.abs || num == 1
@@ -11,3 +10,4 @@ def prime?(num)
   end
   range.empty? ? true : false
 end
+puts Benchmark.measure {prime?(19)*1_000_000 }
