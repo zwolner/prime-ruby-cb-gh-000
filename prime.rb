@@ -4,8 +4,7 @@ def prime?(num)
   if num == 0 || num.even? == true
     return false
   else
-    range.any? do |x|
-     num.abs % x == 0 ? false : true
-    end
+    range.delete_if? {|x| num.abs % x != 0}
+    range.empty? ? true : false
   end
 end
