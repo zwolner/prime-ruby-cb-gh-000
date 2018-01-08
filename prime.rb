@@ -4,9 +4,11 @@ def prime?(num)
     return false
   else
     range = (2...num.abs).to_a
-    range.any? do |x|
-      num.abs % x == 0
-      break if num.abs % x == 0
+    range.each do |x|
+     if num.abs % x == 0
+       return false
+     else
+       true
     end
   end
 end
