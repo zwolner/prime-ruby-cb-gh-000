@@ -1,6 +1,10 @@
 # Add  code here!
 require 'benchmark'
 
+iterations = 100_000
+Benchmark.bm(27) do |bm|
+bm.report('prime') do
+iterations.times do
 def prime?(num)
   if num == 0 || num.even? == true || num != num.abs || num == 1
     return false
