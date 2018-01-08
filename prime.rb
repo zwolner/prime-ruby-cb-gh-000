@@ -4,6 +4,6 @@ def prime?(num)
     return false
   else
     range = (2...num.abs).to_a
-    range.any? {|x| num.abs % x == 0 ? false : true}
+    range.any? {|x| (num.abs % x == 0) ? false : true}
   end
 end
