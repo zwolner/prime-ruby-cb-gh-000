@@ -14,3 +14,5 @@ def prime?(num)
   end
   range.empty? ? true : false
 end
+end
+end
