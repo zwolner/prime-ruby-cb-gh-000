@@ -14,3 +14,4 @@ end
 
 Benchmark.bm do |x|
   x.report {prime?(123124512)}
+end
