@@ -11,7 +11,3 @@ def prime?(num)
   end
   range.empty? ? true : false
 end
-
-Benchmark.bm do |x|
-  x.report {prime?(132512351)}
-end
