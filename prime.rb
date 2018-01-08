@@ -5,6 +5,6 @@ def prime?(num)
     return false
   else
     range.delete_if {|x| ((num.abs) % x) != 0}
-    range.empty? ? true : false
+    range.empty? true : false
   end
 end
