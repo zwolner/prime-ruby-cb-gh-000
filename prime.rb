@@ -4,11 +4,8 @@ def prime?(num)
   if num == 0 || num.even? == true
     return false
   else
-    range.each do |x|
-     if num.abs % x == 0
-       return false
-     else
-       true
+    range.any? do |x|
+     num.abs % x == 0 return false else true
      end
     end
   end
