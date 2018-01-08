@@ -1,14 +1,17 @@
 # Add  code here!
 require 'benchmark'
 
-Benchmark.bm do |x|
-  def prime?(num)
-    if num == 0 || num.even? == true || num != num.abs || num == 1
-      return false
-    else
-      range = (2...num).to_a
-      range.delete_if {|x| (num % x) != 0}
-    end
-    range.empty? ? true : false
+
+def prime?(num)
+  if num == 0 || num.even? == true || num != num.abs || num == 1
+    return false
+  else
+    range = (2...num).to_a
+    range.delete_if {|x| (num % x) != 0}
   end
+  range.empty? ? true : false
+end
+
+Benchmark.bm do |x|
+  prime?(100010101)
 end
