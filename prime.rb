@@ -13,5 +13,5 @@ def prime?(num)
 end
 
 Benchmark.bm do |x|
-  x.report {prime?(1325123512361)}
+  x.report {prime?(132512351)}
 end
