@@ -11,4 +11,4 @@ def prime?(num)
   range.empty? ? true : false
 end
 
-puts Benchmark.measure {prime?(19)*1_000_000 }
+puts Benchmark.measure {"prime?(19)"*1_000_000}
