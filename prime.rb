@@ -1,6 +1,6 @@
 # Add  code here!
 def prime?(num)
-  if num == 0 || num.even? == true || num != num.abs
+  if num == 0 || num.even? == true || num != num.abs || num == 1
     return false
   else
     range = (2...num).to_a
