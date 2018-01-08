@@ -1,7 +1,7 @@
 # Add  code here!
 def prime?(num)
   range = (2...num.abs).to_a
-  if num == 0 || num.even? == true
+  if num == 0 || num.even? == true || num != num.abs
     return false
   else
     range.delete_if {|x| ((num.abs) % x) != 0}
