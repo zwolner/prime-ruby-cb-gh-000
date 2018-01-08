@@ -13,5 +13,5 @@ def prime?(num)
 end
 
 Benchmark.bm do |x|
-  prime?(100010101)
+  prime?(101)
 end
