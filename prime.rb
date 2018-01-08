@@ -6,7 +6,6 @@ def prime?(num)
   else
     range.any? do |x|
      num.abs % x == 0 return false else true
-     end
     end
   end
 end
