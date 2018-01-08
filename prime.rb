@@ -13,5 +13,4 @@ def prime?(num)
 end
 
 Benchmark.bm do |x|
-  prime?(101)
-end
+  x.report {prime?(123124512)}
