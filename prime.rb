@@ -5,8 +5,8 @@ def prime?(num)
   else
     range = (2...num.abs).to_a
     range.any? do |x|
-      (num.abs % x == 0) ? false : true
+      num.abs % x == 0
+      break if num.abs % x == 0
     end
   end
-  return v
 end
