@@ -4,6 +4,6 @@ def prime?(num)
     return false
   else
     range = (2...num).to_a
-    range.for {|x| num % x == 0 ? false : true}
+    range.each {|x| num % x == 0 ? false : true}
   end
 end
