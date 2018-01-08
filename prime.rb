@@ -1,7 +1,7 @@
 # Add  code here!
 require 'benchmark'
 
-Benchmark.bmbm do |x|
+Benchmark.bm do |x|
   def prime?(num)
     if num == 0 || num.even? == true || num != num.abs || num == 1
       return false
